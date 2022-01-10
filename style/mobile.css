@@ -17,8 +17,6 @@ body{
     display: flex;
     font-family: Rubik;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     padding: 2rem 0;
 }
@@ -50,7 +48,7 @@ body::after{
     background: white;
     z-index: 1;
     border-radius: 30px;
-    margin-top: 5rem;
+    margin: 5rem auto 0 auto;
     box-shadow: 3px 3px 10px rgba(0,0,0, 0.5);
     padding: 1rem;
     position: relative;
