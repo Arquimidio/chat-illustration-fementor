@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Rubik:wght@400;500;700&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: hsl(270, 36%, 34%);
+    --light-magenta-grad: hsl(293, 100%, 63%);
+    --light-purple-grad: hsl(264, 100%, 61%);
+
+}
+
+body{
+    display: flex;
+    font-family: Rubik;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem 0;
+}
+
+body::before, body::after{
+    content: '';
+    width: 90vw;
+    height: 70vh;
+}
+
+body::before{
+    background-image: linear-gradient(to bottom, var(--light-magenta-grad), var(--light-purple-grad));
+    position: absolute;
+    border-radius: 0 0 50% 50%;
+    left: -40vw;
+    top: -20vh;
+}
+
+body::after{
+    background-color: rgba(211, 211, 211, 0.151);
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    right: -40vw;
+    bottom: -20vh;
+}
+
+.cellphone{
+    width: 80%;
+    background: white;
+    z-index: 1;
+    border-radius: 30px;
+    margin-top: 5rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0, 0.5);
+    padding: 1rem;
+    position: relative;
+}
+
+.camera{
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    height: 2rem;
+    position: absolute;
+    border-radius: 0 0 20px 20px;
+    top: 4px;
+}
+
+.display{
+    height: 100%;
+    width: 100%;
+    background: rgba(211, 211, 211, 0.164);
+    border-radius: inherit;
+}
+
+nav{
+    width: 100%;
+    border-radius: 30px 30px 10px 10px;
+    height: 4rem;
+    background-image: linear-gradient(to left, var(--light-magenta-grad), var(--light-purple-grad));
+}
+
+.messages{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.message{
+    width: 70%;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+.sender{
+    align-self: flex-end;
+    background-color: white;
+}
+
+.receiver{
+    align-self: flex-start;
+    background-color: gray;
+   
+}
+
+.send-message{
+    align-self: stretch;
+    background-color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 20px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
