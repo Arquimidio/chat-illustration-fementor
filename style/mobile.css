@@ -11,7 +11,13 @@
     --light-magenta-grad: hsl(293, 100%, 63%);
     --light-purple-grad: hsl(264, 100%, 61%);
     --header-magenta: hsl(271, 36%, 24%);
-
+    --receiver-message: hsl(276, 55%, 52%);
+    --sender-message: hsl(271, 15%, 43%);
+    --placeholder-text: hsl(206, 6%, 79%);
+    --paragraph-text: hsl(270, 7%, 64%);
+    --app-bg: hsl(270, 20%, 96%);
+    --submit-bg: hsl(271, 36%, 24%);
+    --radio-bg: hsl(289, 100%, 72%);
 }
 
 body{
@@ -21,6 +27,7 @@ body{
     min-height: 100vh;
     padding: 2rem 0;
     position: relative;
+    background-color: var(--app-bg)
 }
 
 body::before, body::after{
@@ -137,6 +144,7 @@ nav i{
     background-color: white;
     animation-name: show-message-right;
     animation-duration: 2s;
+    color: var(--sender-message)
 }
 
 .images{
@@ -158,6 +166,7 @@ nav i{
     background-color: rgba(128, 128, 128, 0.158);
     animation-name: show-message-left;
     animation-duration: 2s;
+    color: var(--receiver-message)
 }
 
 .service{
@@ -191,10 +200,14 @@ nav i{
     border-radius: 40px;
 }
 
+.send-message--text{
+    color: var(--placeholder-text)
+}
+
 .send-message i{
     color: white;
     padding: 0.8rem 1rem;
-    background: black;
+    background: var(--submit-bg);
     border-radius: 50%;
 }
 
@@ -209,15 +222,17 @@ nav i{
     animation: show-text-top-to-bottom 2s;
 }
 
-.text p{
-    line-height: 2rem;
-    color: rgb(170, 170, 170);
-}
-
 .text h1{
     font-size: 2.5rem;
     color: var(--header-magenta);
 }
+
+.text p{
+    line-height: 2rem;
+    color: var(--paragraph-text);
+}
+
+
 
 
 
