@@ -1,0 +1,46 @@
+@media screen and (min-width: 600px){
+    
+    :root{
+        font-size: 10px;
+    }
+
+    body{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    body::before, body::after{
+        width: 40%;
+        height: calc(100% + 6rem)
+    }
+
+    body::before{
+        left: -10vw;
+    }
+
+    body::after{
+        right: -10vw;
+    }
+    .cellphone{
+        max-width: 25rem;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .text{
+        text-align: left;
+        max-width: 45rem;
+    }
+
+    .text h1{
+        font-size: 4rem;
+    }
+
+    .text p{
+        font-size: 1.5rem;
+    }
+}

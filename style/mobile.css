@@ -31,27 +31,25 @@ body{
 }
 
 body::before, body::after{
+    position: absolute;
     content: '';
     width: 90vw;
     height: 70vh;
+    z-index: -1;
 }
 
 body::before{
     background-image: linear-gradient(to bottom, var(--light-magenta-grad), var(--light-purple-grad));
-    position: absolute;
     border-radius: 0 0 50% 50%;
     left: -40vw;
     top: -20vh;
-    z-index: -1;
 }
 
 body::after{
     background-color: rgba(173, 173, 173, 0.103);
-    position: absolute;
     border-radius: 50% 50% 0 0;
     right: -40vw;
     bottom: -20vh;
-    z-index: -1;
 }
 
 .cellphone{
@@ -120,7 +118,7 @@ nav i{
 .display{
     height: 100%;
     width: 100%;
-    background: rgba(211, 211, 211, 0.164);
+    background: var(--app-bg);
     border-radius: inherit;
 }
 
@@ -147,6 +145,10 @@ nav i{
     color: var(--sender-message)
 }
 
+.sender:not(.images){
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .images{
     background-color: transparent;
     display: flex;
@@ -163,7 +165,7 @@ nav i{
 
 .receiver{
     align-self: flex-start;
-    background-color: rgba(128, 128, 128, 0.158);
+    background-color: rgba(238, 238, 238, 0.747);
     animation-name: show-message-left;
     animation-duration: 2s;
     color: var(--receiver-message)
