@@ -17,8 +17,9 @@ body{
     display: flex;
     font-family: Rubik;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem 0;
+    position: relative;
 }
 
 body::before, body::after{
@@ -33,18 +34,20 @@ body::before{
     border-radius: 0 0 50% 50%;
     left: -40vw;
     top: -20vh;
+    z-index: -1;
 }
 
 body::after{
-    background-color: rgba(211, 211, 211, 0.151);
+    background-color: rgba(173, 173, 173, 0.205);
     position: absolute;
     border-radius: 50% 50% 0 0;
     right: -40vw;
     bottom: -20vh;
+    z-index: -1;
 }
 
 .cellphone{
-    width: 80%;
+    width: 90%;
     background: white;
     z-index: 1;
     border-radius: 30px;
@@ -100,7 +103,7 @@ nav{
 
 .receiver{
     align-self: flex-start;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.158);
    
 }
 
