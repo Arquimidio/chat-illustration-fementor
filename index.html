@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat app</title>
+    <link rel="stylesheet" href="./style/animations.css">
     <link rel="stylesheet" href="./style/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -14,7 +15,7 @@
         <div class="display">
             <nav>
                 <i class="fas fa-chevron-left"></i>
-                <img src="./images/avatar.jpg" alt="">
+                <img src="./images/avatar.jpg" alt="Avatar image">
                 <div class="info">
                     <div class="name">Samuel Green</div>
                     <div class="status">Available to walk</div>
@@ -28,10 +29,10 @@
                 <p class="message receiver">
                     Could you send over some pictures of your dogs, please?
                 </p>
-                <div class="sender">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="message sender images">
+                    <img src="./images/dog-image-1.jpg" alt="Dog photo">
+                    <img src="./images/dog-image-2.jpg" alt="Dog photo">
+                    <img src="./images/dog-image-3.jpg" alt="Dog photo">
                 </div>
                 <p class="message sender">
                     Here are a few pictures. She's a happy girl!
@@ -40,9 +41,20 @@
                 <p class="message receiver">
                     She looks so happy! The time we discussed works. How long shall i take her for?
                 </p>
-                <div class="price"></div>
-                <div class="price"></div>
-                <div class="send-message"></div>
+                <div class="message receiver service">
+                    <i class="far fa-circle"></i>
+                    <div class="time">30 minute walk</div>
+                    <div class="price">$29</div>
+                </div>
+                <div class="message receiver service">
+                    <i class="far fa-circle"></i>
+                    <div class="time">1 hour walk</div>
+                    <div class="price">$49</div>
+                </div>
+                <div class="send-message">
+                    <div class="send-message--text">Type a message...</div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
         </div>
     </div>

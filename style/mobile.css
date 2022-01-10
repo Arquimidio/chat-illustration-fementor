@@ -10,6 +10,7 @@
     --bg: hsl(270, 36%, 34%);
     --light-magenta-grad: hsl(293, 100%, 63%);
     --light-purple-grad: hsl(264, 100%, 61%);
+    --header-magenta: hsl(271, 36%, 24%);
 
 }
 
@@ -134,20 +135,69 @@ nav i{
 .sender{
     align-self: flex-end;
     background-color: white;
+    animation-name: show-message-right;
+    animation-duration: 2s;
+}
+
+.images{
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+.images img{
+    width: auto;
+    height: 3.5rem;
+    border-radius: 10px;
 }
 
 .receiver{
     align-self: flex-start;
     background-color: rgba(128, 128, 128, 0.158);
-   
+    animation-name: show-message-left;
+    animation-duration: 2s;
 }
 
+.service{
+    display: flex;
+    background-image: linear-gradient(to right, 
+                                        var(--light-magenta-grad), 
+                                        var(--light-purple-grad)
+                                        );
+    justify-content: flex-start;
+    align-items: center;
+    width: 85%;
+    gap: 1rem;
+    color: white;
+    padding: 1rem;
+}
+
+.price{
+    margin-left: auto;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+
 .send-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     align-self: stretch;
     background-color: white;
-    padding: 1.2rem 2rem;
-    border-radius: 20px;
+    padding: 1.2rem 1.5rem;
+    border-radius: 40px;
 }
+
+.send-message i{
+    color: white;
+    padding: 0.8rem 1rem;
+    background: black;
+    border-radius: 50%;
+}
+
 
 .text{
     display: flex;
@@ -155,6 +205,18 @@ nav i{
     gap: 2rem;
     text-align: center;
     padding: 2rem;
+    margin-top: 1rem;
+    animation: show-text-top-to-bottom 2s;
+}
+
+.text p{
+    line-height: 2rem;
+    color: rgb(170, 170, 170);
+}
+
+.text h1{
+    font-size: 2.5rem;
+    color: var(--header-magenta);
 }
 
 
