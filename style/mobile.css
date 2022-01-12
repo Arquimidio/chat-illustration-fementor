@@ -139,11 +139,11 @@ nav i{
 }
 
 .sender{
+    opacity: 0;
     align-self: flex-end;
     background-color: white;
-    animation-name: show-message-right;
-    animation-duration: 2s;
-    color: var(--sender-message)
+    color: var(--sender-message);
+    animation-fill-mode: forwards;
 }
 
 .sender:not(.images){
@@ -165,11 +165,11 @@ nav i{
 }
 
 .receiver{
+    opacity: 0;
     align-self: flex-start;
     background-color: rgba(238, 238, 238, 0.747);
-    animation-name: show-message-left;
-    animation-duration: 2s;
-    color: var(--receiver-message)
+    color: var(--receiver-message);
+    animation-fill-mode: forwards;
 }
 
 .service{
